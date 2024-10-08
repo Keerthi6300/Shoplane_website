@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family:"Montserrat", sans-serif;
+}
+#header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0px;
+    box-shadow: 2px 2px 1px gray;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+    background-color: white;
+}
+#nav-links{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+}
+.header-links{
+    margin: 0px 20px;
+    color: black;
+    text-decoration: none;
+}
+.header-links:hover{
+    color: #009688;
+}
+.icons{
+    padding: 0px 20px;
+}
+#icons{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 10px;
+}
+.toggle_btn{
+    margin: 0px 30px;
+    display: none;
+    cursor: pointer;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    height: 0px;
+    background-color: antiquewhite;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slide{
+    margin-top: 65px;
+}
+.carousel-inner{
+    margin-bottom: 30px;
+    align-items: center;
+}
+.anime{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+    margin-top: 100px;
+}
+#icons-anime{
+    text-align: center;
+}
+#icons-anime i{
+    color: white;
+    font-size: 30px;
+    margin: 6px 50px;
+    padding: 20px;
+    background-color: #009688;
+    border-radius: 50%;
+}
+#product-section{
+    width: 80%;
+    margin: 25px auto;
+}
+#clothing-section , #accessories-section{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 0px 5px;
+    margin-bottom: 50px;
+    margin: 40px auto;
+}
+.product-card{
+    margin: 15px;
+    box-shadow: 2px 2px 10px rgba(52, 36, 36, 0.745);
+    font-size: 5px;
+    
+}
+.product-card:hover{
+    box-shadow: 6px 6px 10px gray, -6px -6px 10px gray;
+}
+.product-image{
+    width: 100%;
+}
+#footer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding-bottom: 20px;
+    margin: 0px;
+}
+ul{
+    list-style-type: none;
+}
+@media(max-width : 784px){
+    .anime{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #clothing-section , #accessories-section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .toggle_btn{
+        display: block;
+    }
+    .header-links{
+        display: none;
+        margin: 0px 20px;
+        color: black;
+        text-decoration: none;
+    }
+}
+@media(min-width : 785px){
+    .anime{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #clothing-section , #accessories-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .toggle_btn{
+        display: block;
+    }
+    .header-links{
+        margin: 0px 20px;
+        color: black;
+        text-decoration: none;
+        display: none;
+    }
+}
+@media(min-width : 998px){
+    .anime{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #clothing-section , #accessories-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .toggle_btn{
+        display: none;
+    }
+    .header-links{
+        display: block;
+        margin: 0px 20px;
+        color: black;
+        text-decoration: none;
+    }
+    .dropdown-menu{
+        display: none;
+    }
+}
+@media(min-width : 1256px){
+    .anime{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #clothing-section , #accessories-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .toggle_btn{
+        display:none;
+    }
+    .header-links{
+        margin: 0px 20px;
+        color: black;
+        text-decoration: none;
+    }
+    .dropdown-menu{
+        display: none;
+    }
+}
+@media(min-width : 1400px){
+    .anime{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #clothing-section , #accessories-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    #footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .toggle_btn{
+        display: none;
+    }
+    .header-links{
+        margin: 0px 20px;
+        color: black;
+        text-decoration: none;
+    }
+    .dropdown-menu{
+        display: none;
+    }
+}
