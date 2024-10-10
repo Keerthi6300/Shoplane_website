@@ -1,7 +1,7 @@
 <h3><b>Overview:</b></h3>
 
 Shoplane is a E-Commerce platform designed to provide users with a seamless and enjoyable online shopping experience for fashion items.The platform offers a collection of clothing and accessories , catering to diverse tastes and styles.Shopping with a dynamic website which shows a good interests and having a good experience to the users.This platform which is having an adding and removing the product selection from the cart. This website is made with a responsive which can adaptive to any kind of devices on the screen.It is developed by using HTML , CSS , Javascript.
-Checkout this link <a href="keerthi6300.github.io/Shoplane_website/">Shoplane</a> and experience the online shopping.
+Checkout this link <a href="https://keerthi6300.github.io/Shoplane_website/">Shoplane</a> and experience the online shopping.
 
 <h3><b>Technical Stack for the Project:</b></h3>
 
